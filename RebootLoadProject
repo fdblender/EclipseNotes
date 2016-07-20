@@ -1,0 +1,34 @@
+1) START ORACLE & RUN SCRIPTS
+
+  172  su 
+	(password: oracle)
+  173  . ~/.bash_profile
+  174  lsnrctl start
+  175  sqlplus / as sysdba
+
+  Run Oracle scripts to create database
+  Run Oracle script to create the sequences
+
+2) Create the Project from github 
+   if root (su), exit
+   cd workspace (do not create the directory, git clone will do that)
+   git clone https://fdblender@github.com/JoshPTucker/Samazon
+   
+3) Import project
+   	Eclipse, File, Import
+   Install Tomcat Server
+   	Window, Preferences, Servers, Runtime environment
+	install Apache Tomcat v7.0
+	Window, Show View, Servers
+		right click on server to start the server
+	Make sure the server is in the build path
+   JAR Files
+	make sure the jar files are copied into WEB-INF/lib
+	Project, Build Path, add external jars, select all jars, apply
+   JPA Facets
+	Project, Properties, Project Facets, apply, OK
+	
+
+   
+
+	
